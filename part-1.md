@@ -40,7 +40,7 @@ To work around this, it's possible to tell Frida to connect to an already-inject
 
 Head to [Frida releases](https://github.com/frida/frida/releases) and download the appropriate latest frida-gadget DLL for your platform, which in my case was [frida-gadget-14.2.18-windows-x86_64.dll.xz](https://github.com/frida/frida/releases/download/14.2.18/frida-gadget-14.2.18-windows-x86_64.dll.xz). After extracting, inject this into the process manually using a DLL injector. I used my own [Injector](https://github.com/wkhughes/Injector), but any will work:
 
-![frida-gadget-inject](C:\Users\Will\OneDrive\Documents\Projects 2021\Frida Docs\part-1\frida-gadget-inject.png)
+![DLL injector](frida-gadget-inject.png)
 
 #### Remote Connection
 
