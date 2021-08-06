@@ -3,4 +3,5 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-theme: minima
+theme: jekyll-theme-cayman
+show_downloads: false
