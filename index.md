@@ -1,2 +1,2 @@
 # Blog
-1. Things go here...
+See the [first post](post_1.md).
