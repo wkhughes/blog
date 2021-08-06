@@ -1,6 +1,11 @@
-## [First Post](post_1.md)
-### Preview
+### [First Post](post_1.md)
+#### Preview
 > Some stuff
 
-#### Test header 4
-##### Test header 5
+### [Other post](post_1.md)
+#### Preview
+> Some stuff
+
+### [Final post](post_1.md)
+#### Preview
+> Some stuff
