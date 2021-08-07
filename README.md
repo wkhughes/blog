@@ -1,12 +1,3 @@
-## Reverse Engineering
-### [First Post](post_1.md)
-#### Preview
-> Some stuff
+## Posts
 
-### [Other post](post_1.md)
-#### Preview
-> Some stuff
-
-### [Final post](post_1.md)
-#### Preview
-> Some stuff
+- 2021-08-07 [Reverse Engineering Games with Frida (Part 1): Introduction to the Frida CLI](reverse-engineering-games-with-frida-part-1.md)

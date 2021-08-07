@@ -1,12 +1,11 @@
 # Reverse Engineering Games with Frida (Part 1): Introduction to the Frida CLI
 
-part 2 - frida trace
-
 ## Introduction
 
-Why Frida? Prototyping and exploration. Used to add hook code, recompile a DLL, reinject the DLL
-
-A lot of that can be done with a debugger, but also: Anti debugging
+Recently I've started using [Frida](https://frida.re) to aid in reverse engineering of Windows games. Why Frida? My old workflow was to inject a C++ DLL containing my patches and hooks into the game, which meant *any* update (e.g. logging an extra parameter in a hook) involved ejecting the DLL, recompiling, and reinjecting. Compare to using Frida:
+- **Quick prototyping**: Function hooks are scriptable. I can change what my hooks do just by updating some JS. Frida automatically updates the hooks inside the target process while it's running.
+- **Exploration**: The Frida CLI provides a REPL inside of the target process. This provides an easy way to poke around its memory and structure.
+- **Anti-anti-debugging**: Some games make it difficult to attach a debugger for reverse engineering. The quick prototyping and exploration tools of Frida provides an alternative.
 
 ## Installation
 
@@ -40,7 +39,7 @@ To work around this, it's possible to tell Frida to connect to an already-inject
 
 Head to [Frida releases](https://github.com/frida/frida/releases) and download the appropriate latest frida-gadget DLL for your platform, which in my case was [frida-gadget-14.2.18-windows-x86_64.dll.xz](https://github.com/frida/frida/releases/download/14.2.18/frida-gadget-14.2.18-windows-x86_64.dll.xz). After extracting, inject this into the process manually using a DLL injector. I used my own [Injector](https://github.com/wkhughes/Injector), but any will work:
 
-![DLL injector](frida-gadget-inject.png)
+![DLL injector](images/frida-gadget-inject.png)
 
 #### Remote Connection
 
