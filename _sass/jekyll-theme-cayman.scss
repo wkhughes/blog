@@ -111,7 +111,6 @@ a {
 
 .page-header {
   color: $header-heading-color;
-  border-bottom: 1px solid $header-heading-color;
   
   @include large {
     max-width: 64rem;
