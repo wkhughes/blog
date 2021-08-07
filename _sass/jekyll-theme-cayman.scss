@@ -111,6 +111,7 @@ a {
 
 .page-header {
   color: $header-heading-color;
+  border-bottom: 1px solid $header-heading-color;
   
   @include large {
     max-width: 64rem;
@@ -132,19 +133,7 @@ a {
 
 .project-name {
   margin-top: 0;
-  margin-bottom: 0.1rem;
-
-  @include large {
-    font-size: 2.25rem;
-  }
-
-  @include medium {
-    font-size: 1.25rem;
-  }
-
-  @include small {
-    font-size: 0.75rem;
-  }
+  padding-bottom: 0.1rem;
 }
 
 .project-tagline {
