@@ -5,7 +5,7 @@
 Recently I've started using [Frida](https://frida.re) to aid in reverse engineering of Windows games. Why Frida? My old workflow was to inject a C++ DLL containing my patches and hooks into the game, which meant *any* update (e.g. logging an extra parameter in a hook) involved ejecting the DLL, recompiling, and reinjecting. Compare to using Frida:
 - **Quick prototyping**: Function hooks are scriptable. I can change what my hooks do just by updating some JS. Frida automatically updates the hooks inside the target process while it's running.
 - **Exploration**: The Frida CLI provides a REPL inside of the target process. This provides an easy way to poke around its memory and structure.
-- **Anti-anti-debugging**: Some games make it difficult to attach a debugger for reverse engineering. The quick prototyping and exploration tools of Frida provides an alternative.
+- **Anti-anti-debugging**: Some games make it difficult to attach a debugger for reverse engineering. The quick prototyping and exploration tools of Frida provide an alternative.
 
 ## Installation
 
