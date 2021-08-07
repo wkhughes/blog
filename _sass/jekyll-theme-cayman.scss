@@ -193,6 +193,10 @@ a {
   }
 
   img {
+    display: box;
+    margin: 0 auto;
+    padding: 1rem;
+    filter: drop-shadow(0 0 0.6rem #555);
     max-width: 100%;
   }
 
